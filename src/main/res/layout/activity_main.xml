@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.shakirul.currencyconverter.MainActivity">
+
+    <EditText
+        android:id="@+id/usd"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_centerHorizontal="true"
+        android:hint="USD"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/gbp"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="GBP"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_below="@+id/usd"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="click"
+        android:text="SUBMIT"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_below="@+id/gbp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="click2"
+        android:text="SUBMIT"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_below="@+id/submit2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp"
+        android:onClick="reset"
+        android:text="RESET"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="1USD = 0.85GBP"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
